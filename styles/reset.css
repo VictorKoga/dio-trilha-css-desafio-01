@@ -1,0 +1,8 @@
+/* importando a urel que contem a fonte do projeto*/ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+/*asterisco é um seletor universal dentro dele esta aplicando a familia da fonte e dizendo que ela é sans-serif ou seja sem traços, utilizando um box-sizing para quando  usada para alterar o modo como o tamanho total de um elemento é calculado e definindo a margem em 0 para todos os lados */ 
+* {
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}

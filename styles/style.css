@@ -1,0 +1,153 @@
+/* importa o caminho que esta o outro CSS*/
+@import url(reset.css);
+/* corpo do HTML aplicado fundo cor preta */
+body {
+    background: black;
+}
+/* tag h2 dentro do html alterando a font, cor, define o peso do texto, espaçamento entre as fontes, e colocando todo o texto em maiusculo, e aplicando uma margim do botão*/
+h2 {
+  font-size: 2rem;/*equivale a 32px*/
+  color: #33a8db;/* aplica cor azul no texto*/
+  font-weight: bold;/*aplica o negrito no texto*/
+  letter-spacing: 0.25rem;/*equivale a 4px calcula 4/16 da o valor de 0.25*/
+  text-transform: uppercase;/*aplica letras maiusculas pro texto*/
+  margin-bottom: 1.5rem;/*aplica uma margem de 1.5 rem do botão*/
+}
+/* tag p aplicando a cor branca no paragrafo */
+p {
+  color: white;
+  margin-bottom: 10px;
+}
+/* centraliza o elemento e aplica uma margem de 100px na parte superior e inferior */
+section {
+  margin: 6.25rem auto;/*100/16 = 6.25rem 1rem equivale a 16px*/
+}
+/* classe banner adiciona um fundo linear gradiente, o tamanho do background cover redimensina a imagem ao fundo do elemento, background-repeat para nao repetir a imagem, altura de 600px, um espaçamento do top de 60px, uma borda no botão de 10px com uma cor solida */
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../assets/images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB80;
+}
+/* classe banner pegando a classe filho de header banner content aplicando uma cor branca, largura de 600px, margin automatico, alinhando o texto ao centro */
+.banner .banner-content {
+  color: white;
+  width: 37.5rem;
+  margin: auto;
+  text-align: center;
+}
+/* pegando a classe banner na tag h1 adicionando uma fonte de 40px, um peso da font de 900 deixando ela ultrabold, transformando o texto em maiusculo, cor transparente, aplicando um fundo linear gradiente e um backgroun-clip em texto */
+.banner h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  background: -webkit-linear-gradient(#33A8DB, #1472B7);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/*banner tag p uma fonte de 20px e uma marem de 16px 0px 24px*/ 
+.banner p {
+  font-size: 1.25rem;
+  margin: 1rem 0 1.5rem;
+}
+/* banner logo cor do funro preto com opacidade de 0.2, altura de 260px, largura de 260px, margem automatica, arredondamento da borda em 50%, espaçamento de 16px, e aplica uma margem no botão de 16px*/ 
+.banner .logo {
+  background-color: rgba(0, 0, 0, .2);
+  height: 16.25rem;
+  width: 16.25rem;
+  margin: auto;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+/* imagem da logo margin automatica, largura da imagem de 100%, altura da imagem de 100% e o obejto redimensiona o conteudo dentro do container*/ 
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* botão aplica uma cor azul, tamanho da font de 16px, peso da fonte negrito, espaçamento de 16px e 32px, transforma o texto em maiusculo, espaçamento de letras de 4px, cor do fundo transparente, a borda da imagem na cor linear gradiente, dividindo a imagem de borda especificada em 10, e um arredondamento de borda de 30px*/ 
+.banner .banner-content button {
+  color: #31A8DD;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  background-color: transparent;
+  border-image: linear-gradient(#3BA1CD, #1572B7);
+  border-image-slice: 10;
+  border-radius: 1.875rem;
+}
+/* largura em 800px e alinhamento do texto ao centro */
+#course-content {
+  width: 50rem;
+  text-align: center;
+}
+/* aplica uma margem de 24px*/ 
+#course-content .modules-list {
+  margin: 1.5rem 0;
+}
+/*aplica a cor branca, largura de 530px, uma borda, um fundo preto, um espaçamento de 16px, arrendodamento das boras em 100px, e uma sombra interna */ 
+#course-content .modules-list .module {
+  color: white;
+  width: 33.125rem;
+  margin: 0 auto 1.5rem;
+  border: 0,0625rem solid #33A8DB;
+  background-color: #252525;
+  padding: 1rem;
+  border-radius: 100px;
+  box-shadow: inset -0,3125rem 0,375rem .5rem rgba(0, 0, 0, .7);
+}
+/* aplica uma cor */
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+/* aplica uma altura de 560px, redimensiona a imagem dentro do elemento, adiciona o caminho da imagem, backgroun-attachment mantenha a imagem fixa, borda no top, borda no botão e um espaçamento*/
+#transform-world {
+  height: 35rem;
+  background-size: cover;
+  background-image: url(../assets/images/woman-code.png);
+  background-attachment: fixed;
+  border-top: 0.0625rem solid #33A8DB80;
+  border-bottom: 0.0625rem solid #33A8DB80;
+  padding: 12.5rem;
+}
+/* ID transform-world tag p peso da fonte ultrabold, tamanho da fonte de 40px, transforma o texto em minusculo, maximo da largura é de 250px e aplixa uma sombra no texto*/ 
+#transform-world p {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-transform: lowercase;
+  max-width: 15.625rem;
+  text-shadow: 0.1875rem 0.125rem #33A8DB;
+}
+/* ID alinha o texto ao centro, largura de 800px*/
+#professional-challenges {
+  text-align: center;
+  width: 50rem;
+}
+/* ID aplica uma margin de 32px */
+#professional-challenges img {
+  margin: 2rem 0;
+}
+/* rodape aplica um espaçamento de 60px alinha o texto ao centro, aplica um efeito linear gradiente na imagem e aplica uma borda no topo com 1px cor solida */
+footer {
+  padding: 3.75rem 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+  border-top: 1px solid #33A8DB80;
+}
+/* largura da logo */
+footer .dio-logo {
+  width: 18.75rem;
+}
+/* rodape link a aplica uma cor, peso da fonte em negrito, texto sem sombra */
+footer a {
+  color: #33A8DB;
+  font-weight: bold;
+  text-decoration: none;
+}
